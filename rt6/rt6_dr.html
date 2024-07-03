@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../main.css">
+        <title>CSCI-711 - Ray Tracing 6</title>
+
+        <!-- include the main final functions -->
+        <script type="module" src="rt6_main_dr.js"></script>
+
+        <!-- Matrix library and code for standard transformations -->
+        <script type="text/javascript" src="gl-matrix-min.js"></script>
+        <script type="text/javascript">
+            const {mat2, mat3, mat4, vec2, vec3, vec4} = glMatrix;
+        </script>
+
+    </head>
+
+    <body class="palegreen">
+        <h1>CSCI-711 - Ray Tracing 6 (Transmission)</h1>
+        <h2>David Robinson</h2>
+        <table>
+            <tr>
+                <td><canvas id="webgl-canvas" width="750" height="750">
+                Your browser does not support the HTML5 canvas element.
+                </canvas></td>
+            </tr>
+            <tr>
+                <td>
+                    <dl>
+                        <dt style="font-size:22px"><b>Press '4' for transparency to impact shadows</b></dt>
+                        <dd>Normal shadows (default) / Shadows impacted based on transparency</dd>
+                        <dt style="font-size:22px"><b>Press 'r' to restore defaults</b></dt>
+                        <dd>Every option will be set to its default setting</dd>
+                    </dl>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
